@@ -198,6 +198,7 @@ spec:
       labels:
         istio: egress
     spec:
+      serviceAccountName: istio-engress-service-account
       containers:
       - name: proxy
         image: docker.io/istio/proxy_debug:0.1.6
